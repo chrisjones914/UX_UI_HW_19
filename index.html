@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <style>
+        /* for big screens */
+        /* wrapper */
+        #hamnav {width: 100%; 
+            background: white;
+        /* optional */
+        position: sticky;
+        top: 0;    
+          }
+
+        /* hide hamburger */
+        #hamnav label, #hamburger {display: none;}
+        
+        /* menu items */
+        #hamitems {display: flex;}
+        #hamitems a {width: 20%; /* 100/5 = 20% */
+        padding: 10px;
+        color:navy;
+        text-decoration: none;
+        text-align: center;}
+
+        /* for small screens */
+        @media screen {
+            /* show hamburger */
+            #hamnav label {
+                display: inline-block;
+                color: navy;
+                background:white;
+                font-style: normal;
+                font-size: 1.2em;
+                padding: 10px;
+            }
+            /* collapse menu items */
+            #hamitems a {
+                box-sizing: border-box;
+                display: block;
+                width: 100%;
+                border-top: 1px solid #333333;
+            }
+            /* toggle show/hide menu*/
+            #hamitems {display: none;}
+            #hamnav input:checked ~ #hamitems {display: block;}
+            
+        }
+    </style>
+      </div>
+      <nav id="hamnav">
+          <!--hamburger-->
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger">
+          <!--menu items-->
+          <div id="hamitems">
+              <a class="dropdown-item" href="mywork copy.html">My Projects</a>
+              <a class="dropdown-item" href="myskills copy.html">My Skills</a>
+              <a href="#">Research Process</a>
+              <a class="dropdown-item" href="Resume/Chris D. Jones Resume .docx">My Resume</a>
+         </div>
+
+      </nav>
+
+        <section>
+            <div>
+                <img src="Images/portfolio image.png" alt="" style="height: 300px;width: 300px;">
+
+                <p>
+                    <ul>
+
+                    <li> About Me:
+                        Hi, my name is Chris. 
+                        I am a freelance UX/UI Designer.
+                        I specialize in the creative process, UX/UI Design and 
+                        handling user centric problems related
+                        to their personal experience with the 
+                        product. </li>
+                    
+                    <li> Experience: Adobe XD, Figma, Invision and HTML</li>
+
+                    <li>Contact Information:
+                            Phone: 404-580-4193
+                            Email: cdj0914@icloud
+                    </li>
+
+                    </ul>  
+                    
+                <p>
+
+                <img src="Images/socialbarsample.png" alt="">
+        </body>
+    </head>
+</html>
